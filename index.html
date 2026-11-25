@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Microsoft Cloud Security Engineer | Portfolio</title>
+<title>SHWE YI WIN MINN | Microsoft Cloud Security Engineer</title>
 
 <style>
 * {
@@ -192,13 +191,36 @@ footer {
         font-size: 12px;
     }
 }
+
+.hero { padding: 45px 8%; background: #0b1523; }
+.ph-intro { display:flex; align-items:center; justify-content:space-between; gap:35px; }
+.ph-content { flex:1; min-width:0; }
+.ph-name { font-size:clamp(30px,5vw,48px); margin:12px 0; color:#f1f5f9; }
+.ph-job-title { font-size:clamp(19px,3vw,25px); font-weight:600; color:#75bbff; }
+.ph-location { display:flex; align-items:center; gap:8px; font-size:14px; }
+.ph-location svg { width:17px; height:17px; color:#75bbff; }
+.ph-profile { flex-shrink:0; text-align:center; }
+.ph-photo { width:150px; height:150px; border-radius:50%; background:#173654; border:2px solid #75bbff; display:grid; place-items:center; overflow:hidden; }
+.ph-photo svg { width:60px; height:60px; color:#75bbff; }
+.ph-photo img { width:100%; height:100%; object-fit:cover; }
+.ph-photo-caption { font-size:13px; color:#a8bdd4; margin-top:10px; }
+.ph-actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:15px; }
+.ph-actions .button { margin:0; }
+.ph-actions .ph-secondary { background:transparent; border:1px solid #75bbff; color:#75bbff; }
+.ph-actions .ph-secondary:hover { background:#173654; }
+.hero .stats { grid-template-columns:repeat(2,minmax(0,1fr)); max-width:none; gap:16px; margin-top:30px; }
+.hero .stat { background:#101f31; border:1px solid #1c3046; border-radius:10px; padding:22px; transition:.25s; }
+.hero .stat:hover { border-color:#75bbff; transform:translateY(-3px); }
+#contact a { color:#75bbff; overflow-wrap:anywhere; }
+@media(max-width:600px) { .hero { padding:30px 6%; } .ph-intro { flex-direction:column-reverse; align-items:flex-start; gap:20px; } .ph-profile { align-self:center; } .ph-photo { width:115px; height:115px; } .hero .stats { gap:10px; } .hero .stat { padding:15px; } .hero .description { font-size:14px; } .grid { grid-template-columns:repeat(auto-fit,minmax(min(250px,100%),1fr)); } }
+
 </style>
 </head>
 
 <body>
 
 <nav>
-    <div class="logo">CLOUD SECURITY</div>
+    <div class="logo">CLOUD SECURITY PORTFOLIO</div>
 
     <div>
         <a href="#about">About</a>
@@ -209,55 +231,30 @@ footer {
     </div>
 </nav>
 
-<header class="hero">
-
-    <div class="eyebrow">
-        MICROSOFT CLOUD & CYBERSECURITY
+<header class="hero" id="home">
+    <div class="ph-intro">
+        <div class="ph-content">
+            <div class="eyebrow">MICROSOFT CLOUD &amp; SECURITY</div>
+            <h1 class="ph-name">SHWE YI WIN MINN</h1>
+            <div class="ph-job-title">Microsoft Cloud Security Engineer</div>
+            <p class="description">Designing, implementing and securing enterprise cloud environments through Zero Trust, security automation and Microsoft security technologies.</p>
+            <div class="ph-location"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg> Bangkok, Thailand</div>
+        </div>
+        <div class="ph-profile">
+            <div class="ph-photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="7" r="4"/><path d="M4 22v-2a8 8 0 0 1 16 0v2"/></svg></div>
+            <div class="ph-photo-caption">Profile photo</div>
+        </div>
     </div>
-
-    <h1>
-        Securing identities, endpoints and
-        <span class="highlight">
-            cloud environments.
-        </span>
-    </h1>
-
-    <h3>SHWE YI WIN MINN</h3>
-
-    <p class="description">
-        Microsoft Cloud Security and Cybersecurity
-        Engineer specializing in Zero Trust,
-        enterprise security, endpoint management,
-        SIEM and security automation.
-    </p>
-
-    <a class="button" href="#projects">
-        Explore My Projects
-    </a>
-
-    <a class="button" href="#contact">
-        Contact Me
-    </a>
-
+    <div class="ph-actions">
+        <a class="button" href="#projects">Explore My Projects</a>
+        <a class="button ph-secondary" href="https://www.linkedin.com/in/shwe-yi-win-minn-bb73a81b4" target="_blank" rel="noopener noreferrer">LinkedIn &#8599;</a>
+    </div>
     <div class="stats">
-
-        <div class="stat">
-            <strong>5+</strong>
-            <span>Years of Experience</span>
-        </div>
-
-        <div class="stat">
-            <strong>30+</strong>
-            <span>Projects Delivered</span>
-        </div>
-
-        <div class="stat">
-            <strong>2,000</strong>
-            <span>Users Supported, Up To</span>
-        </div>
-
+        <div class="stat"><strong>5+</strong><span>Years of Experience</span></div>
+        <div class="stat"><strong>30+</strong><span>Projects Delivered</span></div>
+        <div class="stat"><strong>2,000</strong><span>Users Supported, Up To</span></div>
+        <div class="stat"><strong>17</strong><span>Microsoft Certifications</span></div>
     </div>
-
 </header>
 
 <section id="about">
@@ -267,8 +264,7 @@ footer {
     <h2>Professional Introduction</h2>
 
     <p class="description">
-        I am a Microsoft Cloud Security and
-        Cybersecurity Engineer with over five years
+        I am a Microsoft Cloud Security Engineer with over five years
         of experience in designing, implementing
         and managing enterprise security solutions.
     </p>
@@ -343,7 +339,7 @@ footer {
         </div>
 
         <div class="card">
-            <div class="tag">CLOUD SECURITY</div>
+            <div class="tag">CLOUD SECURITY PORTFOLIO</div>
             <h3>Microsoft Azure</h3>
             <p>
                 Azure Security, Azure Monitor, AMA,
@@ -702,17 +698,17 @@ footer {
     </p>
 
     <p>
-        Email: shweyiwinminn@gmail.com
+        Email: <a href="mailto:shweyiwinminn@gmail.com">shweyiwinminn@gmail.com</a>
     </p>
 
     <p>
-        LinkedIn: www.linkedin.com/in/shwe-yi-win-minn-bb73a81b4
+        LinkedIn: <a href="https://www.linkedin.com/in/shwe-yi-win-minn-bb73a81b4" target="_blank" rel="noopener noreferrer">View LinkedIn profile</a>
     </p>
 
 </section>
 
 <footer>
-    &copy; 2026 Your Full Name |
+    &copy; 2026 SHWE YI WIN MINN |
     Microsoft Cloud Security Portfolio
 </footer>
 
